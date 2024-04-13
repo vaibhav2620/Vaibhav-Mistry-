@@ -1,5 +1,9 @@
 body{
     background-color: #463047;
+    margin: 0;
+}
+.navbar{
+    margin: 10px;
 }
 .products{
     display: flexbox;
@@ -9,5 +13,21 @@ body{
   
   .products iframe{
     margin: 20px;
+  }
+  .navbar{
+    padding: 10px;
+    background-color: #463047;
+    font-family:fantasy;
+    font-size: 30px;
+    color: #FFFFFF;
+  }
+
+  .footer{
+    background-color: #FFFFFF;
+    padding: 5px;
+  }
+  .footer p{
+    color: #463047;
+    margin-left: 40%;
   }
   
