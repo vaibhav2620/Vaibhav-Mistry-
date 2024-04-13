@@ -25,9 +25,20 @@ body{
   .footer{
     background-color: #FFFFFF;
     padding: 5px;
+    width: 100%;
   }
   .footer p{
     color: #463047;
     margin-left: 40%;
   }
   
+
+  @media only screen and (max-width: 600px) {
+    .products{
+      margin: 15%;
+    }
+    .footer p {
+      margin-left: 10%;
+      font-size: small;
+    }
+  }
