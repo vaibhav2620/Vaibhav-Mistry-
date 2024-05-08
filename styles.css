@@ -230,8 +230,8 @@ body {
   content: "";
   position: absolute;
   top: 40px;
-  right: -34vh;
-  width: 34vh;
+  right: -28vh;
+  width: 28vh;
   height: 2px;
   background: #7a1313;
 }
@@ -257,9 +257,7 @@ body {
   color: #b1eaff;
 }
 
-.logo img{
-  
-}
+
 
 @media screen and (max-width: 600px) {
   
@@ -285,12 +283,22 @@ body {
   .resume_social{
     display: none;
   }
-  .resume .resume_left .bold{
+  .resume .resume_left .resume_profile .bold{
     font-size: 200%;
-    margin-top: 10%;
+    margin-top: 40%;
+    margin-left: 0;
   }
   .resume .resume_right .resume_hobby ul li:before {
-    right: -10vw;
-    width: 10vw;
+    display: none;
+  }
+  .resume .resume_left .resume_profile img {
+    width: 50%;
+    height: 15vh;
+    border-radius: 50%;
+  }
+  .resume .resume_left .resume_profile{
+    width: 80%;
+    height: 50%;
+    display: flex;
   }
 }
