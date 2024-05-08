@@ -1,0 +1,44 @@
+body{
+    background-color: #463047;
+    margin: 0;
+}
+.navbar{
+    margin: 10px;
+}
+.products{
+    display: flexbox;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .products iframe{
+    margin: 20px;
+  }
+  .navbar{
+    padding: 10px;
+    background-color: #463047;
+    font-family:fantasy;
+    font-size: 30px;
+    color: #FFFFFF;
+  }
+
+  .footer{
+    background-color: #FFFFFF;
+    padding: 5px;
+    width: 100%;
+  }
+  .footer p{
+    color: #463047;
+    margin-left: 40%;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .products{
+      margin: 15%;
+    }
+    .footer p {
+      margin-left: 10%;
+      font-size: small;
+    }
+  }
