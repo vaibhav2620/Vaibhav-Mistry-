@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 
+html{
+  max-width: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +12,7 @@
 }
 
 body {
-  background: #585c68;
-  font-size: 14px;
-  line-height: 22px;
+  width: 100%;
   color: #555555;
 }
 
@@ -27,27 +28,28 @@ body {
 }
 
 .resume {
-  width: 1000px;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
-  margin: 50px auto;
 }
 
-.resume .resume_left {
-  width: 450px;
+.resume_left {
+  width: 30%;
   background: #7a1313;
 }
 
 .resume .resume_left .resume_profile {
-  margin-left: 7%;
+  margin-left: 10%;
   margin-top: 10%;
   width: 70%;
   height: 280px;
 }
 
 .resume .resume_left .resume_profile img {
+  margin-left: 10%;
   width: 100%;
   height: 100%;
+  border-radius: 10%;
 }
 
 .resume .resume_left .resume_content {
@@ -146,10 +148,11 @@ body {
   margin-bottom: 3px;
 }
 
-.resume .resume_right {
-  width: 600px;
+.resume_right {
+  width: 70%;
   background: #fff;
   padding: 25px;
+  padding-left: 5%;
 }
 
 .resume .resume_right .bold {
@@ -164,6 +167,8 @@ body {
 
 .resume .resume_right ul li {
   position: relative;
+  margin-top: 3%;
+  margin-left: 4%;
 }
 
 .resume .resume_right ul li .date {
@@ -199,7 +204,7 @@ body {
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 140px;
+  height: 220px;
   background: #7a1313;
 }
 
@@ -225,8 +230,8 @@ body {
   content: "";
   position: absolute;
   top: 40px;
-  right: -70px;
-  width: 70px;
+  right: -34vh;
+  width: 34vh;
   height: 2px;
   background: #7a1313;
 }
@@ -254,4 +259,38 @@ body {
 
 .logo img{
   
+}
+
+@media screen and (max-width: 600px) {
+  
+  .resume {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume_left {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: auto;
+    background: #7a1313;
+  }
+  .resume_left img{
+    margin-top: 10%;
+  }
+  .resume_right{
+    width: 100%;
+    margin-left: 3%;
+  }
+  .resume_social{
+    display: none;
+  }
+  .resume .resume_left .bold{
+    font-size: 200%;
+    margin-top: 10%;
+  }
+  .resume .resume_right .resume_hobby ul li:before {
+    right: -10vw;
+    width: 10vw;
+  }
 }
