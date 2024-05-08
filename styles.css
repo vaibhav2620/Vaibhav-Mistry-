@@ -61,6 +61,9 @@ body {
 .resume .resume_left .bold {
   color: #fff;
 }
+.resume .resume_left .title-mobile{
+  display: none;
+}
 
 .resume .resume_left .regular {
   color: #61b3a5;
@@ -80,6 +83,7 @@ body {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
+  margin-top: 5%;
 }
 
 .resume .resume_left ul li:last-child {
@@ -250,4 +254,56 @@ body {
 .social-links {
   text-decoration: none;
   color: #b1eaff;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+  .resume {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume_left {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: auto;
+    background: #7a1313;
+  }
+  .resume_left img{
+    margin-top: 10%;
+  }
+  .resume_right{
+    width: 100%;
+    margin-left: 3%;
+  }
+  .resume_social{
+    display: none;
+  }
+  .resume .resume_left .resume_profile .bold{
+    font-size: 200%;
+    margin-top: 40%;
+    margin-left: 0;
+  }
+  .resume .resume_right .resume_hobby ul li:before {
+    display: none;
+  }
+  .resume .resume_left .resume_profile img {
+    width: 50%;
+    height: 15vh;
+    border-radius: 50%;
+  }
+  .resume .resume_left .resume_profile{
+    width: 80%;
+    height: 50%;
+    display: flex;
+  }
+  .resume .resume_left .title-mobile{
+    display: block;
+  }
+  .resume .resume_left .title-desktop{
+    display: none;
+  }
 }
