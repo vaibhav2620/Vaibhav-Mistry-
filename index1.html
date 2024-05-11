@@ -347,8 +347,7 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            Feel Free to Contact me anytime
           </span>
         </h2>
         <div class="contact__form-container">
@@ -387,7 +386,7 @@
                 id="message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+            <button type="submit" class="btn btn--theme contact__btn" id="submit">
               Submit
             </button>
           </form>
@@ -456,5 +455,45 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script type="module" >
+      // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+  import { getDatabase, ref , set, get, child} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBQFtARrEkun3d946oIa9Ze4JEmyEsktgA",
+    authDomain: "contactme-c0a6f.firebaseapp.com",
+    projectId: "contactme-c0a6f",
+    storageBucket: "contactme-c0a6f.appspot.com",
+    messagingSenderId: "210696355469",
+    appId: "1:210696355469:web:c45928dd98c99b781cecc4",
+    measurementId: "G-8SBKLB7DMS"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+
+  const db = getDatabase(app);
+
+
+  document.getElementById("submit").addEventListener('click',function(e){
+    e.preventDefault();    
+    set(ref(db, "user/" +document.getElementById("name").value),
+    {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        Message : document.getElementById("message").value
+    });
+    alert("Message Received! I will Contact you soon");
+  });
+    </script>
+
   </body>
 </html>
