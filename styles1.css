@@ -1,14 +1,17 @@
 body{
     background-color: #463047;
-    margin: 0;
+    margin: 0%;
 }
 .navbar{
-    margin: 10px;
+  margin-top: 0%;
+  margin: 10px;
+    position: relative;
 }
 .products{
-    display: flexbox;
+    display: flex;
     align-items: center;
-    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .products iframe{
@@ -32,10 +35,40 @@ body{
     margin-left: 40%;
   }
   
+.product{
+  margin: 15px;
+  margin-right: 25px;
+}
+
+.product img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+.product p{
+  color: #FFFFFF;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+.product a{
+  text-decoration: none;
+}
 
   @media only screen and (max-width: 600px) {
     .products{
-      margin: 15%;
+      margin-top: 10px;
+      background-color: #463047;
+      justify-content: center;
+    }
+
+    .product img{
+      display: flex;
+      width: 100px;
+      height: 100px;
+      align-items: center;
+    }
+    .product p{
+      font-size: small;
     }
     .footer p {
       margin-left: 10%;
