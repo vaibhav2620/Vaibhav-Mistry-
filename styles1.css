@@ -138,19 +138,20 @@ body {
   .product {
       max-width: 150px;
       max-height: 150px;
-      margin-bottom: 10%;
-      margin-right: 5%;
+      margin: 5%;
+      margin-bottom: 15%;
   }
-
   .product img{
-    margin-bottom: 0%;
-    padding-bottom: 0%;
+    margin: 0px;
   }
+.product p{
+  margin-top: 0;
+}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .product {
-      flex: 1 1 calc(50% - 10px); /* 1 product per line for very small screens */
-      max-width:150px
+      max-width:100px;
+      max-height:100px;
   }
 }
