@@ -702,3 +702,9 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+    
+
+.resume_right a{
+  text-decoration: none;
+  color: blue;
+}

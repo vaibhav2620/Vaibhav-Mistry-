@@ -39,14 +39,14 @@ body {
 }
 
 .resume .resume_left .resume_profile {
-  margin-left: 10%;
-  margin-top: 10%;
-  width: 70%;
-  height: 280px;
+  margin: 10%;
+  margin-bottom: 0;
+  width: 60%;
+  height: 180px;
 }
 
 .resume .resume_left .resume_profile img {
-  margin-left: 10%;
+  margin-left: 5%;
   width: 100%;
   height: 100%;
   border-radius: 10%;
@@ -73,6 +73,7 @@ body {
 
 .resume .resume_item {
   padding: 25px 0;
+  padding-top: 0;
   border-bottom: 2px solid #f6b1ff;
 }
 
@@ -182,7 +183,7 @@ body {
 }
 
 .resume .resume_right ul li .info {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .resume .resume_right ul li:last-child .info {
@@ -208,7 +209,8 @@ body {
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 220px;
+  height:100%;
+  margin-bottom: 0  ;
   background: #7a1313;
 }
 
@@ -288,8 +290,8 @@ body {
     display: none;
   }
   .resume .resume_left .resume_profile .bold{
-    font-size: 200%;
-    margin-top: 40%;
+    font-size: 225%;
+    margin-top: 30%;
     margin-left: 0;
   }
   .resume .resume_right .resume_hobby ul li:before {
