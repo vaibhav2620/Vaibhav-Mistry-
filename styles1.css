@@ -135,11 +135,15 @@ body {
   body{
     margin: 0%;
   }
+  .products{
+    margin-left: -10px;
+  }
   .product {
       max-width: 150px;
       max-height: 150px;
       margin: 5%;
       margin-bottom: 15%;
+      margin-left: 0px;
   }
   .product img{
     margin: 0px;
