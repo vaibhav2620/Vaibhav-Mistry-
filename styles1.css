@@ -110,8 +110,11 @@ body {
 }
 
 .product {
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
+  background-color: #000000;
+  margin:1%
+  
 }
 
 .product img {
