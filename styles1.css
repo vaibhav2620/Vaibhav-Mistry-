@@ -18,13 +18,12 @@ body{
     margin: 20px;
   }
   .navbar{
-    padding: 10px;
     background-color: #463047;
-    font-family:fantasy;
-    font-size: 30px;
-    color: #FFFFFF;
+    width:95%;
   }
-
+.navbar img{
+  width: 100%;
+}
   .footer{
     background-color: #FFFFFF;
     padding: 5px;
@@ -34,7 +33,18 @@ body{
     color: #463047;
     margin-left: 40%;
   }
-  
+  .instagram-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .instagram-logo svg{
+    margin:2%;
+  }
+  .profile img{
+width: 10%;
+height: 20%;
+border-radius: 100%;
+  }
 /* .product{
   margin: 15px;
   margin-right: 25px;
@@ -160,5 +170,15 @@ body {
   .product {
       max-width:100px;
       max-height:100px;
+  }
+  .instagram-logo svg{
+    margin:2%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .profile img{
+width: 40%;
+height: 40%;
+border-radius: 100%;
   }
 }
