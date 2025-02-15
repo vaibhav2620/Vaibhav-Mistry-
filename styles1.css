@@ -22,7 +22,8 @@ body{
     width:95%;
   }
 .navbar img{
-  width: 100%;
+  width: 70%;
+  height: 70%;
 }
   .footer{
     background-color: #FFFFFF;
@@ -181,4 +182,12 @@ width: 40%;
 height: 40%;
 border-radius: 100%;
   }
+  .navbar{
+    background-color: #463047;
+    width:95%;
+  }
+.navbar img{
+  width: 100%;
+}
+
 }
